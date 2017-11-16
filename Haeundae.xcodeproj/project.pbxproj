@@ -8,13 +8,15 @@
 
 /* Begin PBXBuildFile section */
 		E508AF451FB03A6600DF56B2 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E508AF441FB03A6600DF56B2 /* AppDelegate.swift */; };
-		E508AF471FB03A6600DF56B2 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E508AF461FB03A6600DF56B2 /* ViewController.swift */; };
+		E508AF471FB03A6600DF56B2 /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E508AF461FB03A6600DF56B2 /* DetailViewController.swift */; };
 		E508AF4A1FB03A6600DF56B2 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E508AF481FB03A6600DF56B2 /* Main.storyboard */; };
 		E508AF4C1FB03A6600DF56B2 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E508AF4B1FB03A6600DF56B2 /* Assets.xcassets */; };
 		E508AF4F1FB03A6600DF56B2 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E508AF4D1FB03A6600DF56B2 /* LaunchScreen.storyboard */; };
 		E508AF5A1FB03A6600DF56B2 /* HaeundaeTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E508AF591FB03A6600DF56B2 /* HaeundaeTests.swift */; };
 		E508AF651FB03A6600DF56B2 /* HaeundaeUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E508AF641FB03A6600DF56B2 /* HaeundaeUITests.swift */; };
 		E508AF731FB03AC200DF56B2 /* TableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E508AF721FB03AC200DF56B2 /* TableViewController.swift */; };
+		E5A945C21FB96643003A6789 /* allViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5A945C11FB96643003A6789 /* allViewController.swift */; };
+		E5A945C41FB9767E003A6789 /* detailMapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5A945C31FB9767E003A6789 /* detailMapViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -37,7 +39,7 @@
 /* Begin PBXFileReference section */
 		E508AF411FB03A6600DF56B2 /* Haeundae.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Haeundae.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E508AF441FB03A6600DF56B2 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		E508AF461FB03A6600DF56B2 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		E508AF461FB03A6600DF56B2 /* DetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
 		E508AF491FB03A6600DF56B2 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		E508AF4B1FB03A6600DF56B2 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		E508AF4E1FB03A6600DF56B2 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -49,6 +51,8 @@
 		E508AF641FB03A6600DF56B2 /* HaeundaeUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HaeundaeUITests.swift; sourceTree = "<group>"; };
 		E508AF661FB03A6600DF56B2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		E508AF721FB03AC200DF56B2 /* TableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TableViewController.swift; sourceTree = "<group>"; };
+		E5A945C11FB96643003A6789 /* allViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = allViewController.swift; sourceTree = "<group>"; };
+		E5A945C31FB9767E003A6789 /* detailMapViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = detailMapViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -100,8 +104,10 @@
 			isa = PBXGroup;
 			children = (
 				E508AF441FB03A6600DF56B2 /* AppDelegate.swift */,
-				E508AF461FB03A6600DF56B2 /* ViewController.swift */,
+				E508AF461FB03A6600DF56B2 /* DetailViewController.swift */,
 				E508AF481FB03A6600DF56B2 /* Main.storyboard */,
+				E5A945C31FB9767E003A6789 /* detailMapViewController.swift */,
+				E5A945C11FB96643003A6789 /* allViewController.swift */,
 				E508AF721FB03AC200DF56B2 /* TableViewController.swift */,
 				E508AF4B1FB03A6600DF56B2 /* Assets.xcassets */,
 				E508AF4D1FB03A6600DF56B2 /* LaunchScreen.storyboard */,
@@ -262,8 +268,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				E508AF471FB03A6600DF56B2 /* ViewController.swift in Sources */,
+				E508AF471FB03A6600DF56B2 /* DetailViewController.swift in Sources */,
 				E508AF731FB03AC200DF56B2 /* TableViewController.swift in Sources */,
+				E5A945C41FB9767E003A6789 /* detailMapViewController.swift in Sources */,
+				E5A945C21FB96643003A6789 /* allViewController.swift in Sources */,
 				E508AF451FB03A6600DF56B2 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -509,6 +517,7 @@
 				E508AF6B1FB03A6600DF56B2 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		E508AF6C1FB03A6600DF56B2 /* Build configuration list for PBXNativeTarget "HaeundaeTests" */ = {
 			isa = XCConfigurationList;
@@ -517,6 +526,7 @@
 				E508AF6E1FB03A6600DF56B2 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		E508AF6F1FB03A6600DF56B2 /* Build configuration list for PBXNativeTarget "HaeundaeUITests" */ = {
 			isa = XCConfigurationList;
@@ -525,6 +535,7 @@
 				E508AF711FB03A6600DF56B2 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

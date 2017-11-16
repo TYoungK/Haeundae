@@ -4,7 +4,6 @@ import UIKit
 
 class TableViewController: UITableViewController,XMLParserDelegate {
     @IBOutlet var tebleview: UITableView!
-    @IBOutlet weak var preimage: UIImageView!
     
     
     let listEndPoint = "http://openapi.haeundae.go.kr/openapi-data/service/rest/stayng/getStayingList"
@@ -92,9 +91,40 @@ class TableViewController: UITableViewController,XMLParserDelegate {
         let cell = tableView.dequeueReusableCell(withIdentifier: "cell",for: indexPath)
         
         let dic = items[indexPath.row]
+        /*
+        if dic["accImage"] == nil{
+        
+        }else{
+            let img = UIImage(named : dic["accImage"] as String!)
+            cell.imageView?.image = img
+        }
+        */
         cell.textLabel?.text = dic["accName"]
-        cell.
+        cell.detailTextLabel?.text = dic["address"]
         return cell
+    }
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if segue.identifier == "detail" {
+            
+            let detailItem = segue.destination as! DetailViewController
+        // 테이블뷰에서 선택한 indexPath.row
+            let selectedIndex = tableView.indexPathForSelectedRow
+            detailItem.itemD = items[(selectedIndex?.row)!]
+        }else if segue.identifier == "allItem"{
+            let allItem = segue.destination as! allViewController
+            // 테이블뷰에서 선택한 indexPath.row
+            allItem.itemA = items
     }
     
 }
+}
+
+
+
+
+
+
+
+
+
+
