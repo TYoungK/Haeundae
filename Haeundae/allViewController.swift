@@ -42,7 +42,7 @@ class allViewController: UIViewController {
         allMap.addAnnotations(annos)
     }
     func zoomToRegion() {
-        let center = CLLocationCoordinate2DMake(35.192819, 129.155744)
+        let center = CLLocationCoordinate2DMake(35.189452, 129.165529)
         let span = MKCoordinateSpanMake(0.1, 0.1)
         let region = MKCoordinateRegionMake(center, span)
         allMap.setRegion(region, animated: true)

@@ -9,10 +9,21 @@
 import UIKit
 
 class DetailViewController: UIViewController {
+    @IBOutlet weak var detailimg: UIImageView!
     var itemD : [String:String] = [:]
+    var imgs : [String] = []
+    @IBOutlet var imgpage: UIPageControl!
     override func viewDidLoad() {
         super.viewDidLoad()
         title = itemD["accName"]
+        imgs.append(itemD["accDetailImages"]!)
+        imgpage.numberOfPages = imgs.count
+        
+        imgpage.currentPageIndicatorTintColor = UIColor.red
+        detailimg.image = UIImage(
+    }
+    @IBAction func pagechage(_ sender: Any) {
+    detailimg.image = UIImage(named: itemD["accDetailImages"]!)
     }
 
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
