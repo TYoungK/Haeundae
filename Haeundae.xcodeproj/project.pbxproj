@@ -17,6 +17,8 @@
 		E508AF731FB03AC200DF56B2 /* TableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E508AF721FB03AC200DF56B2 /* TableViewController.swift */; };
 		E5A945C21FB96643003A6789 /* allViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5A945C11FB96643003A6789 /* allViewController.swift */; };
 		E5A945C41FB9767E003A6789 /* detailMapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5A945C31FB9767E003A6789 /* detailMapViewController.swift */; };
+		E5D489151FC2AD440065338D /* ImageViewEx.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5D489141FC2AD440065338D /* ImageViewEx.swift */; };
+		E5F87D331FC6645F00D74277 /* TableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5F87D321FC6645F00D74277 /* TableViewCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -53,6 +55,8 @@
 		E508AF721FB03AC200DF56B2 /* TableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TableViewController.swift; sourceTree = "<group>"; };
 		E5A945C11FB96643003A6789 /* allViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = allViewController.swift; sourceTree = "<group>"; };
 		E5A945C31FB9767E003A6789 /* detailMapViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = detailMapViewController.swift; sourceTree = "<group>"; };
+		E5D489141FC2AD440065338D /* ImageViewEx.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ImageViewEx.swift; sourceTree = "<group>"; };
+		E5F87D321FC6645F00D74277 /* TableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TableViewCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -106,12 +110,14 @@
 				E508AF441FB03A6600DF56B2 /* AppDelegate.swift */,
 				E508AF461FB03A6600DF56B2 /* DetailViewController.swift */,
 				E508AF481FB03A6600DF56B2 /* Main.storyboard */,
+				E5D489141FC2AD440065338D /* ImageViewEx.swift */,
 				E5A945C31FB9767E003A6789 /* detailMapViewController.swift */,
 				E5A945C11FB96643003A6789 /* allViewController.swift */,
 				E508AF721FB03AC200DF56B2 /* TableViewController.swift */,
 				E508AF4B1FB03A6600DF56B2 /* Assets.xcassets */,
 				E508AF4D1FB03A6600DF56B2 /* LaunchScreen.storyboard */,
 				E508AF501FB03A6600DF56B2 /* Info.plist */,
+				E5F87D321FC6645F00D74277 /* TableViewCell.swift */,
 			);
 			path = Haeundae;
 			sourceTree = "<group>";
@@ -273,6 +279,8 @@
 				E5A945C41FB9767E003A6789 /* detailMapViewController.swift in Sources */,
 				E5A945C21FB96643003A6789 /* allViewController.swift in Sources */,
 				E508AF451FB03A6600DF56B2 /* AppDelegate.swift in Sources */,
+				E5F87D331FC6645F00D74277 /* TableViewCell.swift in Sources */,
+				E5D489151FC2AD440065338D /* ImageViewEx.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

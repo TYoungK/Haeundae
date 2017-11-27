@@ -11,16 +11,21 @@ import UIKit
 class DetailViewController: UIViewController {
     @IBOutlet weak var detailimg: UIImageView!
     var itemD : [String:String] = [:]
-    var imgs : [String] = []
+    
+    
     @IBOutlet var imgpage: UIPageControl!
     override func viewDidLoad() {
         super.viewDidLoad()
         title = itemD["accName"]
-        imgs.append(itemD["accDetailImages"]!)
-        imgpage.numberOfPages = imgs.count
-        
+//        let imgs = NSURL(string: itemD["accDetailImage"]!)!
+//        let imagedData = NSData(contentsOfURL: imgs as URL)
+//        let imgs = itemD["accDetailImage"]
+//        detailimg.downloadedFrom(link: imgs!)
+//        imgs.append(itemD["accDetailImage"]!)
         imgpage.currentPageIndicatorTintColor = UIColor.red
-        detailimg.image = UIImage(
+//        imgpage.numberOfPages = imgs.count
+//        detailimg.image = UIImage(data: imgs[0])
+        
     }
     @IBAction func pagechage(_ sender: Any) {
     detailimg.image = UIImage(named: itemD["accDetailImages"]!)
