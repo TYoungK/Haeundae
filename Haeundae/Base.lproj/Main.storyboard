@@ -82,19 +82,19 @@
                                 <rect key="frame" x="259" y="-8" width="37" height="37"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </activityIndicatorView>
-                            <activityIndicatorView opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" style="whiteLarge" translatesAutoresizingMaskIntoConstraints="NO" id="mzK-tP-cnU">
+                            <activityIndicatorView opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" style="whiteLarge" translatesAutoresizingMaskIntoConstraints="NO" id="ZK2-n1-pgf">
                                 <rect key="frame" x="169.5" y="315.5" width="37" height="37"/>
-                                <color key="color" red="1" green="0.0099468241870000005" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <color key="color" red="1" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                             </activityIndicatorView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
                             <constraint firstItem="HzU-qj-Vg7" firstAttribute="leading" secondItem="qAp-gc-Jsi" secondAttribute="leading" id="0Db-10-KuJ"/>
                             <constraint firstItem="HzU-qj-Vg7" firstAttribute="top" secondItem="SaK-6p-NtK" secondAttribute="bottom" constant="-64" id="AnM-Tu-ycU"/>
-                            <constraint firstItem="mzK-tP-cnU" firstAttribute="centerX" secondItem="qAp-gc-Jsi" secondAttribute="centerX" id="RPD-ax-jpY"/>
+                            <constraint firstItem="ZK2-n1-pgf" firstAttribute="centerY" secondItem="qAp-gc-Jsi" secondAttribute="centerY" id="UqU-Kk-yCQ"/>
+                            <constraint firstItem="ZK2-n1-pgf" firstAttribute="centerX" secondItem="qAp-gc-Jsi" secondAttribute="centerX" id="cBz-OW-JK3"/>
                             <constraint firstItem="HlL-fb-gcV" firstAttribute="top" secondItem="HzU-qj-Vg7" secondAttribute="bottom" id="k82-Bq-hq4"/>
                             <constraint firstAttribute="trailing" secondItem="HzU-qj-Vg7" secondAttribute="trailing" id="kam-IR-px1"/>
-                            <constraint firstItem="mzK-tP-cnU" firstAttribute="centerY" secondItem="qAp-gc-Jsi" secondAttribute="centerY" id="sin-SS-dgh"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="BIx-6T-wAY">
@@ -105,7 +105,7 @@
                         </barButtonItem>
                     </navigationItem>
                     <connections>
-                        <outlet property="AcIndicator" destination="mzK-tP-cnU" id="zkd-kS-cJC"/>
+                        <outlet property="AcIndicator" destination="ZK2-n1-pgf" id="yEo-LE-Z66"/>
                         <outlet property="myTV" destination="HzU-qj-Vg7" id="psF-yR-7Ld"/>
                     </connections>
                 </viewController>
@@ -139,7 +139,7 @@
                                     <constraint firstAttribute="height" constant="190" id="LL5-1O-2yY"/>
                                 </constraints>
                                 <connections>
-                                    <outletCollection property="gestureRecognizers" destination="Byr-BZ-JwK" appends="YES" id="lOJ-yT-w4L"/>
+                                    <outletCollection property="gestureRecognizers" destination="22E-p9-87C" appends="YES" id="L5R-eF-7G7"/>
                                 </connections>
                             </imageView>
                             <pageControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" numberOfPages="3" translatesAutoresizingMaskIntoConstraints="NO" id="7YI-7C-mTq">
@@ -168,7 +168,7 @@
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
-                <screenEdgePanGestureRecognizer minimumNumberOfTouches="1" id="Byr-BZ-JwK"/>
+                <swipeGestureRecognizer direction="right" id="22E-p9-87C"/>
             </objects>
             <point key="canvasLocation" x="101.59999999999999" y="459.22038980509751"/>
         </scene>

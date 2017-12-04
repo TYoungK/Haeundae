@@ -21,19 +21,19 @@ class detailMapViewController: UIViewController {
         
         //print("sLat = \(sLat)")
         
-        let sLoc = itemP["accName"]
-        let sAddr = itemP["address"]
+        let name = itemP["accName"]
+        let addr = itemP["address"]
         
         
         zoomToRegion()
         
-        self.title = sLoc
+        self.title = "위치"
         
         let anno = MKPointAnnotation()
         anno.coordinate.latitude = Lat
         anno.coordinate.longitude = Long
-        anno.title = sLoc
-        anno.subtitle = sAddr
+        anno.title = name
+        anno.subtitle = addr
         
         detailMap.addAnnotation(anno)
         detailMap.selectAnnotation(anno, animated: true)

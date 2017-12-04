@@ -11,7 +11,7 @@ import UIKit
 class DetailViewController: UIViewController {
     @IBOutlet weak var detailimg: UIImageView!
     var itemD : [String:String] = [:]
-    
+    var imgArr : [String] = []
     
     @IBOutlet var imgpage: UIPageControl!
     override func viewDidLoad() {
@@ -22,13 +22,25 @@ class DetailViewController: UIViewController {
 //        let imgs = itemD["accDetailImage"]
 //        detailimg.downloadedFrom(link: imgs!)
 //        imgs.append(itemD["accDetailImage"]!)
+        
+        var imgs = itemD["accDetailImages"]!
+        let Arr = imgs.characters.split(separator: ";").map(String.init)
+        imgArr = Arr
+        imgpage.currentPage = 0
+        imgpage.pageIndicatorTintColor = UIColor.white
         imgpage.currentPageIndicatorTintColor = UIColor.red
-//        imgpage.numberOfPages = imgs.count
-//        detailimg.image = UIImage(data: imgs[0])
+        imgpage.numberOfPages = imgArr.count
+        //self.detailimg.setImageFromURl(stringImageUrl: imgArr[0])
+        detailimg.downloadedFrom(link: imgArr[imgpage.currentPage])
+        
+        
+//        let swipeRight = UISwipeGestureRecognizer(target: self, action: #selector(detailimg.responds(to:)))
+//        swipeRight.direction = UISwipeGestureRecognizerDirection.right
         
     }
     @IBAction func pagechage(_ sender: Any) {
-    detailimg.image = UIImage(named: itemD["accDetailImages"]!)
+        //self.detailimg.setImageFromURl(stringImageUrl: imgArr[])
+        detailimg.downloadedFrom(link: imgArr[imgpage.currentPage])
     }
 
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {

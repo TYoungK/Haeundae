@@ -8,7 +8,7 @@ class TableViewController: UIViewController,XMLParserDelegate,UITableViewDataSou
     
     let listEndPoint = "http://openapi.haeundae.go.kr/openapi-data/service/rest/stayng/getStayingList"
     let detailEndPoint = "http://openapi.haeundae.go.kr/openapi-data/service/rest/stayng/getStayingDetailInfo"
-    let serviceKey = "j%2FTqlUAitLI7jWBm7Qc9bgq8Ynm5wipyeMD1dqousF8VVt3jsTf3HVwydc3QzoK0CIqGzuPClKNcP2qntLLz%2FA%3D%3D"
+    let serviceKey = "ahy2jeesQPj%2FU58va0GKMSMp9sK6LpX9sPhgW%2BJJyXD33sQr2s0xcPe7Az3HT1MH4XOo63DywC6RBVR8O1LUgQ%3D%3D"
     @IBOutlet var myTV: UITableView!
     @IBOutlet var AcIndicator: UIActivityIndicatorView!
     var item:[String:String] = [:]
@@ -43,13 +43,12 @@ class TableViewController: UIViewController,XMLParserDelegate,UITableViewDataSou
             getList(numOfRows: totalCount)
             saveDetail(url: url!)
         }
-        
         myTV.reloadData()
     }
     
     func getList(numOfRows:Int) {
         let str = listEndPoint + "?serviceKey=\(serviceKey)&numOfRows=\(numOfRows)"
-        print(str)
+        //print(str)
         
         if let url = URL(string: str) {
             if let parser = XMLParser(contentsOf: url) {
@@ -76,7 +75,7 @@ class TableViewController: UIViewController,XMLParserDelegate,UITableViewDataSou
                 let success = parser.parse()
                 if success {
                     print("parse success in getDetail")
-                    //print(items)
+                    print(items)
                     
                 } else {
                     print("parse fail in getDeatil")
