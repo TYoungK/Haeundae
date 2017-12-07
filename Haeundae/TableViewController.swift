@@ -8,7 +8,7 @@ class TableViewController: UIViewController,XMLParserDelegate,UITableViewDataSou
     
     let listEndPoint = "http://openapi.haeundae.go.kr/openapi-data/service/rest/stayng/getStayingList"
     let detailEndPoint = "http://openapi.haeundae.go.kr/openapi-data/service/rest/stayng/getStayingDetailInfo"
-    let serviceKey = "ahy2jeesQPj%2FU58va0GKMSMp9sK6LpX9sPhgW%2BJJyXD33sQr2s0xcPe7Az3HT1MH4XOo63DywC6RBVR8O1LUgQ%3D%3D"
+    let serviceKey = "q02oYePjCHf2U4dWA9ixio0UzINsiRtOswSTONDU0rV4Ov1dtA6CYzyZ0CjuPMqljxLDThGZDOKqGv2%2BIIkZWQ%3D%3D"
     @IBOutlet var myTV: UITableView!
     @IBOutlet var AcIndicator: UIActivityIndicatorView!
     var item:[String:String] = [:]
@@ -26,7 +26,7 @@ class TableViewController: UIViewController,XMLParserDelegate,UITableViewDataSou
         
         self.title = "해운대구 숙박업소"
         self.navigationItem.backBarButtonItem = UIBarButtonItem(title:"", style:.plain, target:nil, action:nil)
-        
+        self.navigationItem.rightBarButtonItem?.tintColor = UIColor.red
         let fileManager = FileManager.default
         let url = fileManager.urls(for: .documentDirectory, in: .userDomainMask).first?.appendingPathComponent("data.plist")
         

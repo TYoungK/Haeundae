@@ -18,6 +18,8 @@
 		E5A945C21FB96643003A6789 /* allViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5A945C11FB96643003A6789 /* allViewController.swift */; };
 		E5A945C41FB9767E003A6789 /* detailMapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5A945C31FB9767E003A6789 /* detailMapViewController.swift */; };
 		E5D489151FC2AD440065338D /* ImageViewEx.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5D489141FC2AD440065338D /* ImageViewEx.swift */; };
+		E5F5E8831FD8D93E00CA25F7 /* pin.png in Resources */ = {isa = PBXBuildFile; fileRef = E5F5E8821FD8D93E00CA25F7 /* pin.png */; };
+		E5F5E8851FD8EE8600CA25F7 /* main.png in Resources */ = {isa = PBXBuildFile; fileRef = E5F5E8841FD8EE8600CA25F7 /* main.png */; };
 		E5F87D331FC6645F00D74277 /* TableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5F87D321FC6645F00D74277 /* TableViewCell.swift */; };
 /* End PBXBuildFile section */
 
@@ -56,6 +58,8 @@
 		E5A945C11FB96643003A6789 /* allViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = allViewController.swift; sourceTree = "<group>"; };
 		E5A945C31FB9767E003A6789 /* detailMapViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = detailMapViewController.swift; sourceTree = "<group>"; };
 		E5D489141FC2AD440065338D /* ImageViewEx.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ImageViewEx.swift; sourceTree = "<group>"; };
+		E5F5E8821FD8D93E00CA25F7 /* pin.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = pin.png; sourceTree = "<group>"; };
+		E5F5E8841FD8EE8600CA25F7 /* main.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = main.png; sourceTree = "<group>"; };
 		E5F87D321FC6645F00D74277 /* TableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TableViewCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -118,6 +122,8 @@
 				E508AF4D1FB03A6600DF56B2 /* LaunchScreen.storyboard */,
 				E508AF501FB03A6600DF56B2 /* Info.plist */,
 				E5F87D321FC6645F00D74277 /* TableViewCell.swift */,
+				E5F5E8821FD8D93E00CA25F7 /* pin.png */,
+				E5F5E8841FD8EE8600CA25F7 /* main.png */,
 			);
 			path = Haeundae;
 			sourceTree = "<group>";
@@ -247,7 +253,9 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E5F5E8851FD8EE8600CA25F7 /* main.png in Resources */,
 				E508AF4F1FB03A6600DF56B2 /* LaunchScreen.storyboard in Resources */,
+				E5F5E8831FD8D93E00CA25F7 /* pin.png in Resources */,
 				E508AF4C1FB03A6600DF56B2 /* Assets.xcassets in Resources */,
 				E508AF4A1FB03A6600DF56B2 /* Main.storyboard in Resources */,
 			);

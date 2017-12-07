@@ -98,7 +98,7 @@
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="BIx-6T-wAY">
-                        <barButtonItem key="rightBarButtonItem" title="Item" id="0Tm-c8-oah">
+                        <barButtonItem key="rightBarButtonItem" image="pin.png" id="0Tm-c8-oah">
                             <connections>
                                 <segue destination="FhJ-K4-Yp0" kind="show" identifier="allItem" id="oGN-Bi-w55"/>
                             </connections>
@@ -125,13 +125,6 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="EfI-rv-u6D">
-                                <rect key="frame" x="293" y="307" width="46" height="30"/>
-                                <state key="normal" title="Button"/>
-                                <connections>
-                                    <segue destination="hLc-ca-kee" kind="show" identifier="detailpin" id="Pdh-Sc-8S7"/>
-                                </connections>
-                            </button>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="3dY-1U-dbn">
                                 <rect key="frame" x="0.0" y="64" width="375" height="190"/>
                                 <gestureRecognizers/>
@@ -148,23 +141,78 @@
                                     <action selector="pagechage:" destination="BYZ-38-t0r" eventType="valueChanged" id="X9X-c5-nC1"/>
                                 </connections>
                             </pageControl>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="ttm-Oo-DUJ">
+                                <rect key="frame" x="0.0" y="254" width="375" height="195"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="주소" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ads-Im-986">
+                                        <rect key="frame" x="0.0" y="0.0" width="375" height="38.5"/>
+                                        <color key="backgroundColor" red="1" green="0.41899956597222221" blue="0.45960828993055558" alpha="1" colorSpace="calibratedRGB"/>
+                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="32"/>
+                                        <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="f4g-TM-grN">
+                                        <rect key="frame" x="0.0" y="38.5" width="375" height="26.5"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="22"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="연락처" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="LT2-3e-rND">
+                                        <rect key="frame" x="0.0" y="65" width="375" height="38.5"/>
+                                        <color key="backgroundColor" red="1" green="0.41899956597222221" blue="0.45960828993055558" alpha="1" colorSpace="calibratedRGB"/>
+                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="32"/>
+                                        <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="WfC-wp-IPe">
+                                        <rect key="frame" x="0.0" y="103.5" width="375" height="26.5"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="22"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="요금정보" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Nf6-QJ-r5P">
+                                        <rect key="frame" x="0.0" y="130" width="375" height="38.5"/>
+                                        <color key="backgroundColor" red="1" green="0.41899956597222221" blue="0.45960828993055558" alpha="1" colorSpace="calibratedRGB"/>
+                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="32"/>
+                                        <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="yyx-58-c5z">
+                                        <rect key="frame" x="0.0" y="168.5" width="375" height="26.5"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="22"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                            </stackView>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
+                            <constraint firstAttribute="trailing" secondItem="ttm-Oo-DUJ" secondAttribute="trailing" id="3Yv-Hw-HuJ"/>
                             <constraint firstItem="7YI-7C-mTq" firstAttribute="trailing" secondItem="3dY-1U-dbn" secondAttribute="trailing" id="EtP-Te-fh7"/>
                             <constraint firstAttribute="trailing" secondItem="3dY-1U-dbn" secondAttribute="trailing" id="IfD-k6-4Rt"/>
                             <constraint firstItem="3dY-1U-dbn" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="Vcm-LE-Tec"/>
-                            <constraint firstAttribute="trailingMargin" secondItem="EfI-rv-u6D" secondAttribute="trailing" constant="20" id="c2L-PH-9zZ"/>
-                            <constraint firstItem="EfI-rv-u6D" firstAttribute="top" secondItem="3dY-1U-dbn" secondAttribute="bottom" constant="53" id="jVl-1m-8kt"/>
+                            <constraint firstItem="ttm-Oo-DUJ" firstAttribute="top" secondItem="7YI-7C-mTq" secondAttribute="bottom" id="aYD-XL-lYP"/>
                             <constraint firstItem="3dY-1U-dbn" firstAttribute="bottom" secondItem="7YI-7C-mTq" secondAttribute="bottom" id="nbZ-o3-SjX"/>
                             <constraint firstItem="7YI-7C-mTq" firstAttribute="centerX" secondItem="3dY-1U-dbn" secondAttribute="centerX" id="qL3-8L-VL2"/>
                             <constraint firstItem="3dY-1U-dbn" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" id="qMd-KL-X6B"/>
                             <constraint firstItem="7YI-7C-mTq" firstAttribute="leading" secondItem="3dY-1U-dbn" secondAttribute="leading" id="sqp-gN-3mY"/>
+                            <constraint firstItem="ttm-Oo-DUJ" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="sxA-dn-iXx"/>
                         </constraints>
                     </view>
+                    <navigationItem key="navigationItem" id="xTu-d5-c5F">
+                        <barButtonItem key="rightBarButtonItem" image="pin.png" id="R43-ZS-0pl">
+                            <connections>
+                                <segue destination="hLc-ca-kee" kind="show" identifier="detailpin" id="yhI-EC-dXH"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
                     <connections>
+                        <outlet property="addr" destination="f4g-TM-grN" id="ATX-U7-yld"/>
                         <outlet property="detailimg" destination="3dY-1U-dbn" id="UAj-2h-7oB"/>
+                        <outlet property="fee" destination="yyx-58-c5z" id="vcZ-PV-EmE"/>
                         <outlet property="imgpage" destination="7YI-7C-mTq" id="Zyh-3i-Tef"/>
+                        <outlet property="tel" destination="WfC-wp-IPe" id="Gii-jk-ugF"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
@@ -237,4 +285,7 @@
             <point key="canvasLocation" x="101.59999999999999" y="-280.20989505247377"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="pin.png" width="30" height="30"/>
+    </resources>
 </document>
